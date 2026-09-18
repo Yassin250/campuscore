@@ -67,18 +67,28 @@ export const ROUTES = {
   COURSE_ASSIGNMENTS: (id: string | number) => `/courses/${id}/assignments`,
   COURSE_STUDENTS: (id: string | number) => `/courses/${id}/students`,
   COURSE_SETTINGS: (id: string | number) => `/courses/${id}/settings`,
+  COURSE_EDIT: (id: string | number) => `/courses/${id}/edit`,
 
   CLASSES: "/classes",
   CLASS: (id: string | number) => `/classes/${id}`,
+  CLASS_NEW: "/classes/new",
+  CLASS_EDIT: (id: string | number) => `/classes/${id}/edit`,
 
   DEPARTMENTS: "/departments",
   DEPARTMENT: (id: string | number) => `/departments/${id}`,
+  DEPARTMENT_NEW: "/departments/new",
+   DEPARTMENT_EDIT: (id: string | number) => `/departments/${id}/edit`,
+
+  
 
   FACULTY: "/faculty",
   FACULTY_MEMBER: (id: string | number) => `/faculty/${id}`,
+  FACULTY_MEMBER_EDIT: (id: string | number) => `/faculty/${id}/edit`,
 
   SUBJECTS: "/subjects",
   SUBJECT: (id: string | number) => `/subjects/${id}`,
+  SUBJECT_NEW: "/subjects/new",
+  SUBJECT_EDIT: (id: string | number) => `/subjects/${id}/edit`,
 
   ENROLLMENTS: "/enrollments",
   ENROLLMENT: (id: string | number) => `/enrollments/${id}`,
@@ -228,4 +238,11 @@ export const API_BASE_URL =
 
 export const ACCESS_TOKEN_KEY = "campuscore:access-token";
 export const REFRESH_TOKEN_KEY = "campuscore:refresh-token";
+
+
+
+
+export const CLASS_CAPACITY_MIN = 1;
+export const CLASS_CAPACITY_MAX = 500;
+export const CLASS_SCHEDULE_MAX = 5;
 

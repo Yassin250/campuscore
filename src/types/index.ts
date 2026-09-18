@@ -32,6 +32,7 @@ export type User = {
   imageCldPubId?: string;
   bio?: string;
   departmentId?: number;
+  active?: boolean;
   createdAt: string;
   updatedAt: string;
 };
